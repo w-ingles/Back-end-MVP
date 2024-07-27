@@ -16,4 +16,8 @@ class Cardapio extends Model
         'descricao',
         'preco'
     ];
+    public function restaurante()
+    {
+        return $this->belongsTo(Restaurante::class);
+    }
 }
