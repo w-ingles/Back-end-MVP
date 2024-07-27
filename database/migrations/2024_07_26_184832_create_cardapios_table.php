@@ -19,7 +19,7 @@ return new class extends Migration
             $table->decimal('preco');
             $table->timestamps();
 
-            $table->foreign('restaurante_id')->references('id')->on('restaurantes');
+            $table->foreign('restaurante_id')->references('id')->on('restaurantes')->onDelete('cascade');
         });
     }
 
