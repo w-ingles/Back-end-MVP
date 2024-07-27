@@ -17,7 +17,8 @@ class Restaurante extends Model
         'telefone',
         'horario_funcionamento',
         'website',
-        'avalicacao'
+        'avaliacao',
+        'proprietario_id'
     ];
 
     public function cardapios()

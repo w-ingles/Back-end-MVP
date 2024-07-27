@@ -22,7 +22,7 @@ class RestauranteController extends Controller
      */
     public function create()
     {
-        //
+        // Este método não é usado em APIs RESTful
     }
 
     /**
@@ -30,7 +30,13 @@ class RestauranteController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $restaurante = Restaurante::create($request);
+
+        return response()->json([
+            'message' => 'Restaurante criado com sucesso!',
+            'data' => $restaurante
+        ], 201);
+
     }
 
     /**
@@ -38,7 +44,9 @@ class RestauranteController extends Controller
      */
     public function show(string $id)
     {
-        //
+        // Encontra o restaurante pelo ID e carrega seus cardápios e proprietário
+        $restaurante = Restaurante::with('cardapios', 'proprietario')->findOrFail($id);
+        return response()->json($restaurante, 200);
     }
 
     /**
@@ -46,7 +54,7 @@ class RestauranteController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        // Este método não é usado em APIs RESTful
     }
 
     /**
@@ -54,7 +62,18 @@ class RestauranteController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+
+        // Encontra o restaurante pelo ID
+        $restaurante = Restaurante::findOrFail($id);
+
+
+        // Atualiza o restaurante
+        $restaurante->update($request->all());
+
+        return response()->json([
+            'message' => 'Restaurante atualizado com sucesso!',
+            'data' => $restaurante
+        ], 200);
     }
 
     /**
@@ -62,6 +81,14 @@ class RestauranteController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        // Encontra o restaurante pelo ID
+        $restaurante = Restaurante::findOrFail($id);
+
+        // Exclui o restaurante (e os cardápios)
+        $restaurante->delete();
+
+        return response()->json([
+            'message' => 'Restaurante excluído com sucesso!'
+        ], 204);
     }
 }
