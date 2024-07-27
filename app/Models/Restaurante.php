@@ -21,6 +21,11 @@ class Restaurante extends Model
         'proprietario_id'
     ];
 
+    protected $hidden = [
+        'created_at',
+        'updated_at'
+    ];
+
     public function cardapios()
     {
         return $this->hasMany(Cardapio::class);

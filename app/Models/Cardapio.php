@@ -16,6 +16,10 @@ class Cardapio extends Model
         'descricao',
         'preco'
     ];
+    protected $hidden = [
+        'created_at',
+        'updated_at'
+    ];
     public function restaurante()
     {
         return $this->belongsTo(Restaurante::class);
