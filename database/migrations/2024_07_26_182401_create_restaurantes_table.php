@@ -20,7 +20,10 @@ return new class extends Migration
             $table->string('horario_funcionamento')->nullable();
             $table->string('website')->nullable();
             $table->float('avaliacao')->default(0);
+            $table->uuid('proprietario_id');
             $table->timestamps();
+
+            $table->foreign('proprietario_id')->references('id')->on('users');
         });
     }
 
