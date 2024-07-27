@@ -16,7 +16,8 @@ class RestauranteSeeder extends Seeder
     public function run(): void
     {
         Restaurante::create([
-            'id' => (string) Str::uuid(),
+            //'id' => (string) Str::uuid(),
+            'id' => '71cbcc40-0a38-4f55-9b06-f64352e9b0f2',
             'nome' => 'Restaurante Saboroso',
             'descricao' => 'Um restaurante com pratos variados e deliciosos.',
             'endereco' => 'Rua das Flores, 123',
@@ -27,7 +28,8 @@ class RestauranteSeeder extends Seeder
         ]);
 
         Restaurante::create([
-            'id' => (string) Str::uuid(),
+            //'id' => (string) Str::uuid(),
+            'id' => '81ce8c1e-ce90-476a-aa84-d26347ae987b',
             'nome' => 'Delícias da Vovó',
             'descricao' => 'Comida caseira com sabor de infância.',
             'endereco' => 'Avenida Brasil, 456',
@@ -38,7 +40,8 @@ class RestauranteSeeder extends Seeder
         ]);
 
         Restaurante::create([
-            'id' => (string) Str::uuid(),
+            //'id' => (string) Str::uuid(),
+            'id' => 'a3017e38-56d6-4580-a266-63ffba0c420d',
             'nome' => 'Gourmet Especial',
             'descricao' => 'Experiências gastronômicas únicas.',
             'endereco' => 'Praça Central, 789',
@@ -49,7 +52,8 @@ class RestauranteSeeder extends Seeder
         ]);
 
         Restaurante::create([
-            'id' => (string) Str::uuid(),
+            //'id' => (string) Str::uuid(),
+            'id' => 'd63125ff-ca7e-45ef-9ca5-1a1ec5ed7075',
             'nome' => 'Fast Food Mania',
             'descricao' => 'Rápido e delicioso.',
             'endereco' => 'Rua da Alegria, 321',
