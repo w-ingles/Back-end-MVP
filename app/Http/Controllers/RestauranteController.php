@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Restaurante;
 use Illuminate\Http\Request;
 
 class RestauranteController extends Controller
@@ -11,7 +12,9 @@ class RestauranteController extends Controller
      */
     public function index()
     {
-        //
+        // Traz todos os restaurantes junto com seus cardápios
+        $restaurantes = Restaurante::with('cardapios')->get();
+        return response()->json($restaurantes, 200);
     }
 
     /**

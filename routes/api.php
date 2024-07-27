@@ -2,7 +2,8 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\RestauranteController;
+use App\Http\Controllers\CardapioController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -19,7 +20,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::resources([
-    'Restaurante' => \App\Models\Restaurante::class,
-    'Cardapio' => \App\Models\Cardapio::class,
-
+    'Restaurante' => RestauranteController::class,
+    'Cardapio' =>    CardapioController::class,
 ]);

@@ -19,4 +19,9 @@ class Restaurante extends Model
         'website',
         'avalicacao'
     ];
+
+    public function cardapios()
+    {
+        return $this->hasMany(Cardapio::class);
+    }
 }
