@@ -25,6 +25,7 @@ class RestauranteSeeder extends Seeder
             'horario_funcionamento' => '08:00 - 22:00',
             'website' => 'http://sabores.com',
             'avaliacao' => 4.5,
+            'proprietario_id' => 'e199dcb5-b243-4085-9655-0c70b4d74432',
         ]);
 
         Restaurante::create([
@@ -37,6 +38,7 @@ class RestauranteSeeder extends Seeder
             'horario_funcionamento' => '10:00 - 20:00',
             'website' => 'http://deliciasdavovo.com',
             'avaliacao' => 4.7,
+            'proprietario_id' => 'e199dcb5-b243-4085-9655-0c70b4d74432',
         ]);
 
         Restaurante::create([
@@ -49,6 +51,7 @@ class RestauranteSeeder extends Seeder
             'horario_funcionamento' => '12:00 - 23:00',
             'website' => 'http://gourmetespecial.com',
             'avaliacao' => 4.8,
+            'proprietario_id' => 'e199dcb5-b243-4085-9655-0c70b4d74432',
         ]);
 
         Restaurante::create([
@@ -61,6 +64,7 @@ class RestauranteSeeder extends Seeder
             'horario_funcionamento' => '11:00 - 02:00',
             'website' => 'http://fastfoodmania.com',
             'avaliacao' => 4.2,
+            'proprietario_id' => 'e199dcb5-b243-4085-9655-0c70b4d74432',
         ]);
     }
 }
