@@ -24,4 +24,11 @@ class Restaurante extends Model
     {
         return $this->hasMany(Cardapio::class);
     }
+
+    public function proprietario()
+    {
+        return $this->belongsTo(User::class, 'proprietario_id', 'id');
+    }
+
+
 }

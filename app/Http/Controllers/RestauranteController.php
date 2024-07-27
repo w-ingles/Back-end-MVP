@@ -13,7 +13,7 @@ class RestauranteController extends Controller
     public function index()
     {
         // Traz todos os restaurantes junto com seus cardápios
-        $restaurantes = Restaurante::with('cardapios')->get();
+        $restaurantes = Restaurante::with('cardapios','proprietario')->get();
         return response()->json($restaurantes, 200);
     }
 
