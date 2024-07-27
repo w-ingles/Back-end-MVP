@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('telefone');
             $table->string('horario_funcionamento')->nullable();
             $table->string('website')->nullable();
-            $table->float('avalicacao')->default(0);
+            $table->float('avaliacao')->default(0);
             $table->timestamps();
         });
     }
