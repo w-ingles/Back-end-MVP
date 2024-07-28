@@ -19,7 +19,7 @@ class UsersSeeder extends Seeder
             //'id' => (string) Str::uuid(),
             'name' => 'fred',
             'email' => 'fred@graodireto.com.br',
-            'password' => Hash::make('123Fred'), // Nunca use senhas simples em produção
+            'password' => Hash::make('123Fred'),
             'remember_token' => Str::random(10),
         ]);;
     }

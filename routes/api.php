@@ -4,6 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\RestauranteController;
 use App\Http\Controllers\CardapioController;
+use App\Http\Controllers\AuthController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -23,3 +24,12 @@ Route::resources([
     'Restaurante' => RestauranteController::class,
     'Cardapio' =>    CardapioController::class,
 ]);
+
+Route::group(['middleware' => 'api', 'prefix' => 'auth'], function ($router) {
+
+    Route::post('login', [AuthController::class, 'login']);
+    Route::post('logout', [AuthController::class, 'logout']);
+    Route::post('refresh', [AuthController::class, 'refresh']);
+    Route::post('me', [AuthController::class, 'me']);
+
+});
