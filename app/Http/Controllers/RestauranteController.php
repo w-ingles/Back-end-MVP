@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\RestauranteRequest;
 use App\Models\Restaurante;
 use Illuminate\Http\Request;
 
@@ -28,9 +29,11 @@ class RestauranteController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(RestauranteRequest $request)
     {
-        $restaurante = Restaurante::create($request);
+
+
+        $restaurante = Restaurante::create($request->all());
 
         return response()->json([
             'message' => 'Restaurante criado com sucesso!',
