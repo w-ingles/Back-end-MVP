@@ -82,4 +82,19 @@ class AuthController extends Controller
             'expires_in' => auth('api')->factory()->getTTL() * 60
         ]);
     }
+
+    /**
+     * Check if the token is still valid.
+     *
+     * @return \Illuminate\Http\JsonResponse
+     */
+    public function checkToken()
+    {
+        try {
+            $user = auth()->user();
+            return response()->json(['valid' => true, 'user' => $user]);
+        } catch (\Exception $e) {
+            return response()->json(['valid' => false, 'message' => 'Token inválido ou expirado'], 401);
+        }
+    }
 }
