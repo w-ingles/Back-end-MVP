@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('telefone');
             $table->string('horario_funcionamento')->nullable();
             $table->string('website')->nullable();
+            $table->string('patch_foto')->nullable();
             $table->float('avaliacao')->default(0);
             $table->uuid('proprietario_id')->nullable();
             $table->timestamps();

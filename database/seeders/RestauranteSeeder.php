@@ -15,8 +15,9 @@ class RestauranteSeeder extends Seeder
      */
     public function run(): void
     {
+
         Restaurante::create([
-            'id' => (string) Str::uuid(),
+            'id' => '71cbcc40-0a38-4f55-9b06-f64352e9b0f2',
             'nome' => 'Restaurante Japonês',
             'descricao' => 'Especialidades da culinária japonesa.',
             'endereco' => 'Rua Sakura, 123',
@@ -29,7 +30,7 @@ class RestauranteSeeder extends Seeder
         ]);
 
         Restaurante::create([
-            'id' => (string) Str::uuid(),
+            'id' => '81ce8c1e-ce90-476a-aa84-d26347ae987b',
             'nome' => 'Restaurante Mineiro',
             'descricao' => 'Comida típica de Minas Gerais.',
             'endereco' => 'Rua das Gerais, 456',
@@ -42,7 +43,7 @@ class RestauranteSeeder extends Seeder
         ]);
 
         Restaurante::create([
-            'id' => (string) Str::uuid(),
+            'id' => 'a3017e38-56d6-4580-a266-63ffba0c420d',
             'nome' => 'Restaurante Coreano',
             'descricao' => 'Sabores autênticos da Coreia.',
             'endereco' => 'Rua Seoul, 789',
@@ -55,7 +56,7 @@ class RestauranteSeeder extends Seeder
         ]);
 
         Restaurante::create([
-            'id' => (string) Str::uuid(),
+            'id' => 'd63125ff-ca7e-45ef-9ca5-1a1ec5ed7075',
             'nome' => 'Restaurante Italiano',
             'descricao' => 'Tradição e sabor da Itália.',
             'endereco' => 'Rua Roma, 321',
@@ -68,7 +69,7 @@ class RestauranteSeeder extends Seeder
         ]);
 
         Restaurante::create([
-            'id' => (string) Str::uuid(),
+            'id' => 'e731c5d0-ea32-4cfa-8c8d-8fcbe690c9cd',
             'nome' => 'Restaurante Mexicano',
             'descricao' => 'Culinária picante e saborosa do México.',
             'endereco' => 'Rua Fiesta, 654',
@@ -81,7 +82,7 @@ class RestauranteSeeder extends Seeder
         ]);
 
         Restaurante::create([
-            'id' => (string) Str::uuid(),
+            'id' => 'f841b6c0-0a1d-4b19-8c7f-9b2b1f4e9e5f',
             'nome' => 'Restaurante Francês',
             'descricao' => 'Gastronomia francesa clássica.',
             'endereco' => 'Rua Paris, 987',
@@ -94,7 +95,7 @@ class RestauranteSeeder extends Seeder
         ]);
 
         Restaurante::create([
-            'id' => (string) Str::uuid(),
+            'id' => '07234abc-d456-4ef9-a789-0b1c2d345678',
             'nome' => 'Restaurante Tailandês',
             'descricao' => 'Exóticos sabores da Tailândia.',
             'endereco' => 'Rua Bangkok, 258',
@@ -107,7 +108,7 @@ class RestauranteSeeder extends Seeder
         ]);
 
         Restaurante::create([
-            'id' => (string) Str::uuid(),
+            'id' => '18245bcd-e567-4f89-b123-0c1d2e345678',
             'nome' => 'Restaurante Indiano',
             'descricao' => 'Aromas e especiarias da Índia.',
             'endereco' => 'Rua Delhi, 159',
@@ -120,7 +121,7 @@ class RestauranteSeeder extends Seeder
         ]);
 
         Restaurante::create([
-            'id' => (string) Str::uuid(),
+            'id' => '29256cde-f678-40ba-c234-1d2e3f456789',
             'nome' => 'Restaurante Brasileiro',
             'descricao' => 'Os melhores pratos do Brasil.',
             'endereco' => 'Rua Brasil, 753',
@@ -133,156 +134,13 @@ class RestauranteSeeder extends Seeder
         ]);
 
         Restaurante::create([
-            'id' => (string) Str::uuid(),
+            'id' => '3a367def-0789-41cb-d345-2e4f56789012',
             'nome' => 'Restaurante Árabe',
             'descricao' => 'Autêntica culinária árabe.',
             'endereco' => 'Rua Cairo, 357',
             'telefone' => '(91) 90123-4567',
             'horario_funcionamento' => '10:00 - 22:00',
             'website' => 'http://arabe.com',
-            'avaliacao' => 4,
-            'proprietario_id' => 'e199dcb5-b243-4085-9655-0c70b4d74432',
-            'patch_foto' => '',
-        ]);
-
-        Restaurante::create([
-            'id' => (string) Str::uuid(),
-            'nome' => 'Restaurante Vegetariano',
-            'descricao' => 'Opções deliciosas e saudáveis.',
-            'endereco' => 'Rua Verde, 159',
-            'telefone' => '(31) 91234-5678',
-            'horario_funcionamento' => '09:00 - 21:00',
-            'website' => 'http://vegetariano.com',
-            'avaliacao' => 3,
-            'proprietario_id' => 'e199dcb5-b243-4085-9655-0c70b4d74432',
-            'patch_foto' => '',
-        ]);
-
-        Restaurante::create([
-            'id' => (string) Str::uuid(),
-            'nome' => 'Restaurante Vegano',
-            'descricao' => 'Comida vegana saborosa.',
-            'endereco' => 'Rua Natureza, 951',
-            'telefone' => '(41) 92345-6789',
-            'horario_funcionamento' => '10:00 - 20:00',
-            'website' => 'http://vegano.com',
-            'avaliacao' => 2,
-            'proprietario_id' => 'e199dcb5-b243-4085-9655-0c70b4d74432',
-            'patch_foto' => '',
-        ]);
-
-        Restaurante::create([
-            'id' => (string) Str::uuid(),
-            'nome' => 'Restaurante Mediterrâneo',
-            'descricao' => 'Sabores frescos do Mediterrâneo.',
-            'endereco' => 'Rua Mar Azul, 753',
-            'telefone' => '(51) 93456-7890',
-            'horario_funcionamento' => '11:00 - 22:00',
-            'website' => 'http://mediterraneo.com',
-            'avaliacao' => 4,
-            'proprietario_id' => 'e199dcb5-b243-4085-9655-0c70b4d74432',
-            'patch_foto' => '',
-        ]);
-
-        Restaurante::create([
-            'id' => (string) Str::uuid(),
-            'nome' => 'Restaurante Alemão',
-            'descricao' => 'Culinária tradicional alemã.',
-            'endereco' => 'Rua Munique, 159',
-            'telefone' => '(61) 94567-8901',
-            'horario_funcionamento' => '12:00 - 23:00',
-            'website' => 'http://alemao.com',
-            'avaliacao' => 5,
-            'proprietario_id' => 'e199dcb5-b243-4085-9655-0c70b4d74432',
-            'patch_foto' => '',
-        ]);
-
-        Restaurante::create([
-            'id' => (string) Str::uuid(),
-            'nome' => 'Restaurante Português',
-            'descricao' => 'Sabores de Portugal.',
-            'endereco' => 'Rua Lisboa, 357',
-            'telefone' => '(71) 95678-9012',
-            'horario_funcionamento' => '10:00 - 22:00',
-            'website' => 'http://portugues.com',
-            'avaliacao' => 4,
-            'proprietario_id' => 'e199dcb5-b243-4085-9655-0c70b4d74432',
-            'patch_foto' => '',
-        ]);
-
-        Restaurante::create([
-            'id' => (string) Str::uuid(),
-            'nome' => 'Restaurante Espanhol',
-            'descricao' => 'Paellas e tapas deliciosas.',
-            'endereco' => 'Rua Madri, 951',
-            'telefone' => '(81) 96789-0123',
-            'horario_funcionamento' => '11:00 - 22:00',
-            'website' => 'http://espanhol.com',
-            'avaliacao' => 3,
-            'proprietario_id' => 'e199dcb5-b243-4085-9655-0c70b4d74432',
-            'patch_foto' => '',
-        ]);
-
-        Restaurante::create([
-            'id' => (string) Str::uuid(),
-            'nome' => 'Restaurante Grego',
-            'descricao' => 'Autêntica comida grega.',
-            'endereco' => 'Rua Atenas, 753',
-            'telefone' => '(91) 97890-1234',
-            'horario_funcionamento' => '12:00 - 23:00',
-            'website' => 'http://grego.com',
-            'avaliacao' => 5,
-            'proprietario_id' => 'e199dcb5-b243-4085-9655-0c70b4d74432',
-            'patch_foto' => '',
-        ]);
-
-        Restaurante::create([
-            'id' => (string) Str::uuid(),
-            'nome' => 'Restaurante Peruano',
-            'descricao' => 'Sabores únicos do Peru.',
-            'endereco' => 'Rua Lima, 159',
-            'telefone' => '(11) 98901-2345',
-            'horario_funcionamento' => '10:00 - 21:00',
-            'website' => 'http://peruano.com',
-            'avaliacao' => 4,
-            'proprietario_id' => 'e199dcb5-b243-4085-9655-0c70b4d74432',
-            'patch_foto' => '',
-        ]);
-
-        Restaurante::create([
-            'id' => (string) Str::uuid(),
-            'nome' => 'Restaurante Turco',
-            'descricao' => 'Culinária rica da Turquia.',
-            'endereco' => 'Rua Istambul, 753',
-            'telefone' => '(21) 99012-3456',
-            'horario_funcionamento' => '11:00 - 22:00',
-            'website' => 'http://turco.com',
-            'avaliacao' => 3,
-            'proprietario_id' => 'e199dcb5-b243-4085-9655-0c70b4d74432',
-            'patch_foto' => '',
-        ]);
-
-        Restaurante::create([
-            'id' => (string) Str::uuid(),
-            'nome' => 'Restaurante Africano',
-            'descricao' => 'Delícias do continente africano.',
-            'endereco' => 'Rua Nairobi, 357',
-            'telefone' => '(19) 90123-4567',
-            'horario_funcionamento' => '10:00 - 22:00',
-            'website' => 'http://africano.com',
-            'avaliacao' => 2,
-            'proprietario_id' => 'e199dcb5-b243-4085-9655-0c70b4d74432',
-            'patch_foto' => '',
-        ]);
-
-        Restaurante::create([
-            'id' => (string) Str::uuid(),
-            'nome' => 'Restaurante Libanês',
-            'descricao' => 'Sabores tradicionais do Líbano.',
-            'endereco' => 'Rua Beirute, 159',
-            'telefone' => '(31) 91234-5678',
-            'horario_funcionamento' => '10:00 - 21:00',
-            'website' => 'http://libanes.com',
             'avaliacao' => 4,
             'proprietario_id' => 'e199dcb5-b243-4085-9655-0c70b4d74432',
             'patch_foto' => '',
