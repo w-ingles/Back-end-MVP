@@ -15,7 +15,6 @@ class RestauranteSeeder extends Seeder
      */
     public function run(): void
     {
-
         Restaurante::create([
             'id' => '71cbcc40-0a38-4f55-9b06-f64352e9b0f2',
             'nome' => 'Restaurante Japonês',
@@ -26,7 +25,7 @@ class RestauranteSeeder extends Seeder
             'website' => 'http://japones.com',
             'avaliacao' => 5,
             'proprietario_id' => 'e199dcb5-b243-4085-9655-0c70b4d74432',
-            'patch_foto' => '',
+            'patch_foto' => '/imgs/restaurante/Japones.png',
         ]);
 
         Restaurante::create([
@@ -39,7 +38,7 @@ class RestauranteSeeder extends Seeder
             'website' => 'http://mineiro.com',
             'avaliacao' => 4,
             'proprietario_id' => 'e199dcb5-b243-4085-9655-0c70b4d74432',
-            'patch_foto' => '',
+            'patch_foto' => '/imgs/restaurante/Mineiro.png',
         ]);
 
         Restaurante::create([
@@ -52,7 +51,7 @@ class RestauranteSeeder extends Seeder
             'website' => 'http://coreano.com',
             'avaliacao' => 3,
             'proprietario_id' => 'e199dcb5-b243-4085-9655-0c70b4d74432',
-            'patch_foto' => '',
+            'patch_foto' => '/imgs/restaurante/Coreano.png',
         ]);
 
         Restaurante::create([
@@ -65,7 +64,7 @@ class RestauranteSeeder extends Seeder
             'website' => 'http://italiano.com',
             'avaliacao' => 4,
             'proprietario_id' => 'e199dcb5-b243-4085-9655-0c70b4d74432',
-            'patch_foto' => '',
+            'patch_foto' => '/imgs/restaurante/Italiano.png',
         ]);
 
         Restaurante::create([
@@ -78,7 +77,7 @@ class RestauranteSeeder extends Seeder
             'website' => 'http://mexicano.com',
             'avaliacao' => 2,
             'proprietario_id' => 'e199dcb5-b243-4085-9655-0c70b4d74432',
-            'patch_foto' => '',
+            'patch_foto' => '/imgs/restaurante/Mexicano.png',
         ]);
 
         Restaurante::create([
@@ -91,7 +90,7 @@ class RestauranteSeeder extends Seeder
             'website' => 'http://frances.com',
             'avaliacao' => 5,
             'proprietario_id' => 'e199dcb5-b243-4085-9655-0c70b4d74432',
-            'patch_foto' => '',
+            'patch_foto' => '/imgs/restaurante/Frances.png',
         ]);
 
         Restaurante::create([
@@ -104,7 +103,7 @@ class RestauranteSeeder extends Seeder
             'website' => 'http://tailandes.com',
             'avaliacao' => 4,
             'proprietario_id' => 'e199dcb5-b243-4085-9655-0c70b4d74432',
-            'patch_foto' => '',
+            'patch_foto' => '/imgs/restaurante/Tailandes.png',
         ]);
 
         Restaurante::create([
@@ -117,7 +116,7 @@ class RestauranteSeeder extends Seeder
             'website' => 'http://indiano.com',
             'avaliacao' => 3,
             'proprietario_id' => 'e199dcb5-b243-4085-9655-0c70b4d74432',
-            'patch_foto' => '',
+            'patch_foto' => '/imgs/restaurante/Indiano.png',
         ]);
 
         Restaurante::create([
@@ -130,7 +129,7 @@ class RestauranteSeeder extends Seeder
             'website' => 'http://brasileiro.com',
             'avaliacao' => 5,
             'proprietario_id' => 'e199dcb5-b243-4085-9655-0c70b4d74432',
-            'patch_foto' => '',
+            'patch_foto' => '/imgs/restaurante/Brasileiro.png',
         ]);
 
         Restaurante::create([
@@ -143,7 +142,7 @@ class RestauranteSeeder extends Seeder
             'website' => 'http://arabe.com',
             'avaliacao' => 4,
             'proprietario_id' => 'e199dcb5-b243-4085-9655-0c70b4d74432',
-            'patch_foto' => '',
+            'patch_foto' => '/imgs/restaurante/Arabe.png',
         ]);
 
 

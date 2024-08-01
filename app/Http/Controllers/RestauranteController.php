@@ -11,10 +11,21 @@ class RestauranteController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(Request $request)
     {
         // Traz todos os restaurantes junto com seus cardápios
-        $restaurantes = Restaurante::with('cardapios','proprietario')->get();
+        $filtroGeral = $request->input('filtro');
+
+        $restaurantes = Restaurante::with('cardapios')
+            ->when($filtroGeral, function($query, $filtroGeral) {
+                return $query->where('nome', 'like', '%' . $filtroGeral . '%')
+                    ->orWhereHas('cardapios', function($query) use ($filtroGeral) {
+                        $query->where('descricao', 'like', '%' . $filtroGeral . '%');
+                    });
+            })->get();
+
+        //return response()->json($restaurantes->toSql(), 200);
+
         return response()->json($restaurantes, 200);
     }
 
