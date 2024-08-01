@@ -121,7 +121,7 @@ class RestauranteSeeder extends Seeder
 
         Restaurante::create([
             'id' => '29256cde-f678-40ba-c234-1d2e3f456789',
-            'nome' => 'Restaurante Brasileiro',
+            'nome' => 'Brazieiro',
             'descricao' => 'Os melhores pratos do Brasil.',
             'endereco' => 'Rua Brasil, 753',
             'telefone' => '(81) 99012-3456',
