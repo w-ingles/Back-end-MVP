@@ -22,7 +22,7 @@ class CardapiosSeeder extends Seeder
             'nome' => 'Sushi Combo',
             'descricao' => 'Variedade de sushis frescos.',
             'preco' => 49.90,
-            'patch_foto' => 'cardapiositens/Sushi.png',
+            'patch_foto' => '/imgs/cardapiositens/Sushi.png',
         ]);
 
         Cardapio::create([
@@ -31,7 +31,7 @@ class CardapiosSeeder extends Seeder
             'nome' => 'Tempura',
             'descricao' => 'Legumes e camarão empanados.',
             'preco' => 34.90,
-            'patch_foto' => 'cardapiositens/Tempura.png',
+            'patch_foto' => '/imgs/cardapiositens/Tempura.png',
         ]);
 
         Cardapio::create([
@@ -40,7 +40,7 @@ class CardapiosSeeder extends Seeder
             'nome' => 'Sashimi',
             'descricao' => 'Fatias de peixe cru.',
             'preco' => 44.90,
-            'patch_foto' => 'cardapiositens/Sashimi.png',
+            'patch_foto' => '/imgs/cardapiositens/Sashimi.png',
         ]);
 
         Cardapio::create([
@@ -49,7 +49,7 @@ class CardapiosSeeder extends Seeder
             'nome' => 'Udon',
             'descricao' => 'Sopa de macarrão japonês.',
             'preco' => 29.90,
-            'patch_foto' => 'cardapiositens/Udon.png',
+            'patch_foto' => '/imgs/cardapiositens/Udon.png',
         ]);
 
         Cardapio::create([
@@ -58,7 +58,7 @@ class CardapiosSeeder extends Seeder
             'nome' => 'Yakitori',
             'descricao' => 'Espetinho de frango grelhado.',
             'preco' => 19.90,
-            'patch_foto' => 'cardapiositens/Yakitori.png',
+            'patch_foto' => '/imgs/cardapiositens/Yakitori.png',
         ]);
 
         // Itens de cardápio para Restaurante Mineiro
@@ -68,7 +68,7 @@ class CardapiosSeeder extends Seeder
             'nome' => 'Feijoada',
             'descricao' => 'Tradicional feijoada mineira.',
             'preco' => 39.90,
-            'patch_foto' => 'cardapiositens/Feijoada.png',
+            'patch_foto' => '/imgs/cardapiositens/Feijoada.png',
         ]);
 
         Cardapio::create([
@@ -77,7 +77,7 @@ class CardapiosSeeder extends Seeder
             'nome' => 'Tutu de Feijão',
             'descricao' => 'Tutu de feijão com torresmo e couve.',
             'preco' => 29.90,
-            'patch_foto' => 'cardapiositens/Tutu.png',
+            'patch_foto' => '/imgs/cardapiositens/Tutu.png',
         ]);
 
         Cardapio::create([
@@ -86,7 +86,7 @@ class CardapiosSeeder extends Seeder
             'nome' => 'Pão de Queijo',
             'descricao' => 'Pão de queijo quentinho.',
             'preco' => 9.90,
-            'patch_foto' => 'cardapiositens/Pao.png',
+            'patch_foto' => '/imgs/cardapiositens/Pao.png',
         ]);
 
         Cardapio::create([
@@ -95,7 +95,7 @@ class CardapiosSeeder extends Seeder
             'nome' => 'Frango com Quiabo',
             'descricao' => 'Frango caipira com quiabo.',
             'preco' => 34.90,
-            'patch_foto' => 'cardapiositens/Frango.png',
+            'patch_foto' => '/imgs/cardapiositens/Frango.png',
         ]);
 
         Cardapio::create([
@@ -104,7 +104,7 @@ class CardapiosSeeder extends Seeder
             'nome' => 'Doce de Leite',
             'descricao' => 'Doce de leite artesanal.',
             'preco' => 14.90,
-            'patch_foto' => 'cardapiositens/Doce.png',
+            'patch_foto' => '/imgs/cardapiositens/Doce.png',
         ]);
 
         // Itens de cardápio para Restaurante Coreano
@@ -114,7 +114,7 @@ class CardapiosSeeder extends Seeder
             'nome' => 'Bibimbap',
             'descricao' => 'Arroz com vegetais e carne.',
             'preco' => 39.90,
-            'patch_foto' => 'cardapiositens/Bibimbap.png',
+            'patch_foto' => '/imgs/cardapiositens/Bibimbap.png',
         ]);
 
         Cardapio::create([
@@ -123,7 +123,7 @@ class CardapiosSeeder extends Seeder
             'nome' => 'Kimchi',
             'descricao' => 'Repolho fermentado picante.',
             'preco' => 14.90,
-            'patch_foto' => 'cardapiositens/Kimchi.png',
+            'patch_foto' => '/imgs/cardapiositens/Kimchi.png',
         ]);
 
         Cardapio::create([
@@ -132,7 +132,7 @@ class CardapiosSeeder extends Seeder
             'nome' => 'Bulgogi',
             'descricao' => 'Carne marinada grelhada.',
             'preco' => 44.90,
-            'patch_foto' => 'cardapiositens/Bulgogi.png',
+            'patch_foto' => '/imgs/cardapiositens/Bulgogi.png',
         ]);
 
         Cardapio::create([
@@ -141,7 +141,7 @@ class CardapiosSeeder extends Seeder
             'nome' => 'Tteokbokki',
             'descricao' => 'Bolinhos de arroz picantes.',
             'preco' => 24.90,
-            'patch_foto' => 'cardapiositens/Tteokbokki.png',
+            'patch_foto' => '/imgs/cardapiositens/Tteokbokki.png',
         ]);
 
         Cardapio::create([
@@ -150,7 +150,7 @@ class CardapiosSeeder extends Seeder
             'nome' => 'Japchae',
             'descricao' => 'Macarrão de batata doce com vegetais.',
             'preco' => 34.90,
-            'patch_foto' => 'cardapiositens/Japchae.png',
+            'patch_foto' => '/imgs/cardapiositens/Japchae.png',
         ]);
 
         // Itens de cardápio para Restaurante Italiano
@@ -160,7 +160,7 @@ class CardapiosSeeder extends Seeder
             'nome' => 'Spaghetti Carbonara',
             'descricao' => 'Spaghetti com molho carbonara.',
             'preco' => 39.90,
-            'patch_foto' => 'cardapiositens/Spaghetti.png',
+            'patch_foto' => '/imgs/cardapiositens/Spaghetti.png',
         ]);
 
         Cardapio::create([
@@ -169,7 +169,7 @@ class CardapiosSeeder extends Seeder
             'nome' => 'Lasagna',
             'descricao' => 'Lasagna de carne ao molho bolonhesa.',
             'preco' => 44.90,
-            'patch_foto' => 'cardapiositens/Lasagna.png',
+            'patch_foto' => '/imgs/cardapiositens/Lasagna.png',
         ]);
 
         Cardapio::create([
@@ -178,7 +178,7 @@ class CardapiosSeeder extends Seeder
             'nome' => 'Risotto de Funghi',
             'descricao' => 'Risotto cremoso de cogumelos.',
             'preco' => 49.90,
-            'patch_foto' => 'cardapiositens/Risotto.png',
+            'patch_foto' => '/imgs/cardapiositens/Risotto.png',
         ]);
 
         Cardapio::create([
@@ -187,7 +187,7 @@ class CardapiosSeeder extends Seeder
             'nome' => 'Bruschetta',
             'descricao' => 'Torradas com tomate e manjericão.',
             'preco' => 19.90,
-            'patch_foto' => 'cardapiositens/Bruschetta.png',
+            'patch_foto' => '/imgs/cardapiositens/Bruschetta.png',
         ]);
 
         Cardapio::create([
@@ -196,7 +196,7 @@ class CardapiosSeeder extends Seeder
             'nome' => 'Tiramisu',
             'descricao' => 'Sobremesa italiana de café.',
             'preco' => 24.90,
-            'patch_foto' => 'cardapiositens/Tiramisu.png',
+            'patch_foto' => '/imgs/cardapiositens/Tiramisu.png',
         ]);
 
         // Itens de cardápio para Restaurante Mexicano
@@ -206,7 +206,7 @@ class CardapiosSeeder extends Seeder
             'nome' => 'Tacos',
             'descricao' => 'Tacos crocantes com carne e vegetais.',
             'preco' => 29.90,
-            'patch_foto' => 'cardapiositens/Tacos.png',
+            'patch_foto' => '/imgs/cardapiositens/Tacos.png',
         ]);
 
         Cardapio::create([
@@ -215,7 +215,7 @@ class CardapiosSeeder extends Seeder
             'nome' => 'Guacamole',
             'descricao' => 'Creme de abacate com temperos.',
             'preco' => 14.90,
-            'patch_foto' => 'cardapiositens/Guacamole.png',
+            'patch_foto' => '/imgs/cardapiositens/Guacamole.png',
         ]);
 
         Cardapio::create([
@@ -224,7 +224,7 @@ class CardapiosSeeder extends Seeder
             'nome' => 'Enchiladas',
             'descricao' => 'Tortillas recheadas com carne e molho.',
             'preco' => 34.90,
-            'patch_foto' => 'cardapiositens/Enchiladas.png',
+            'patch_foto' => '/imgs/cardapiositens/Enchiladas.png',
         ]);
 
         Cardapio::create([
@@ -233,7 +233,7 @@ class CardapiosSeeder extends Seeder
             'nome' => 'Nachos',
             'descricao' => 'Nachos com queijo e jalapeños.',
             'preco' => 24.90,
-            'patch_foto' => 'cardapiositens/Nachos.png',
+            'patch_foto' => '/imgs/cardapiositens/Nachos.png',
         ]);
 
         Cardapio::create([
@@ -242,7 +242,7 @@ class CardapiosSeeder extends Seeder
             'nome' => 'Churros',
             'descricao' => 'Churros com doce de leite.',
             'preco' => 19.90,
-            'patch_foto' => 'cardapiositens/Churros.png',
+            'patch_foto' => '/imgs/cardapiositens/Churros.png',
         ]);
 
         // Itens de cardápio para Restaurante Francês
@@ -252,7 +252,7 @@ class CardapiosSeeder extends Seeder
             'nome' => 'Coq au Vin',
             'descricao' => 'Frango ao vinho tinto.',
             'preco' => 49.90,
-            'patch_foto' => 'cardapiositens/Coq.png',
+            'patch_foto' => '/imgs/cardapiositens/Coq.png',
         ]);
 
         Cardapio::create([
@@ -261,7 +261,7 @@ class CardapiosSeeder extends Seeder
             'nome' => 'Quiche Lorraine',
             'descricao' => 'Quiche de bacon e queijo.',
             'preco' => 29.90,
-            'patch_foto' => 'cardapiositens/Quiche.png',
+            'patch_foto' => '/imgs/cardapiositens/Quiche.png',
         ]);
 
         Cardapio::create([
@@ -270,7 +270,7 @@ class CardapiosSeeder extends Seeder
             'nome' => 'Bouillabaisse',
             'descricao' => 'Sopa de peixe e frutos do mar.',
             'preco' => 59.90,
-            'patch_foto' => 'cardapiositens/Bouillabaisse.png',
+            'patch_foto' => '/imgs/cardapiositens/Bouillabaisse.png',
         ]);
 
         Cardapio::create([
@@ -279,7 +279,7 @@ class CardapiosSeeder extends Seeder
             'nome' => 'Ratatouille',
             'descricao' => 'Legumes assados ao estilo provençal.',
             'preco' => 24.90,
-            'patch_foto' => 'cardapiositens/Ratatouille.png',
+            'patch_foto' => '/imgs/cardapiositens/Ratatouille.png',
         ]);
 
         Cardapio::create([
@@ -288,7 +288,7 @@ class CardapiosSeeder extends Seeder
             'nome' => 'Crème Brûlée',
             'descricao' => 'Sobremesa de creme com caramelo.',
             'preco' => 19.90,
-            'patch_foto' => 'cardapiositens/Creme.png',
+            'patch_foto' => '/imgs/cardapiositens/Creme.png',
         ]);
 
         // Itens de cardápio para Restaurante Tailandês
@@ -298,7 +298,7 @@ class CardapiosSeeder extends Seeder
             'nome' => 'Pad Thai',
             'descricao' => 'Macarrão tailandês com camarão.',
             'preco' => 39.90,
-            'patch_foto' => 'cardapiositens/Pad.png',
+            'patch_foto' => '/imgs/cardapiositens/Pad.png',
         ]);
 
         Cardapio::create([
@@ -307,7 +307,7 @@ class CardapiosSeeder extends Seeder
             'nome' => 'Tom Yum',
             'descricao' => 'Sopa picante de camarão.',
             'preco' => 29.90,
-            'patch_foto' => 'cardapiositens/Tom.png',
+            'patch_foto' => '/imgs/cardapiositens/Tom.png',
         ]);
 
         Cardapio::create([
@@ -316,7 +316,7 @@ class CardapiosSeeder extends Seeder
             'nome' => 'Green Curry',
             'descricao' => 'Curry verde com frango.',
             'preco' => 34.90,
-            'patch_foto' => 'cardapiositens/Green.png',
+            'patch_foto' => '/imgs/cardapiositens/Green.png',
         ]);
 
         Cardapio::create([
@@ -325,7 +325,7 @@ class CardapiosSeeder extends Seeder
             'nome' => 'Spring Rolls',
             'descricao' => 'Rolinho primavera frito.',
             'preco' => 19.90,
-            'patch_foto' => 'cardapiositens/Spring.png',
+            'patch_foto' => '/imgs/cardapiositens/Spring.png',
         ]);
 
         Cardapio::create([
@@ -334,7 +334,7 @@ class CardapiosSeeder extends Seeder
             'nome' => 'Mango Sticky Rice',
             'descricao' => 'Arroz doce com manga.',
             'preco' => 24.90,
-            'patch_foto' => 'cardapiositens/Mango.png',
+            'patch_foto' => '/imgs/cardapiositens/Mango.png',
         ]);
 
         // Itens de cardápio para Restaurante Indiano
@@ -344,16 +344,16 @@ class CardapiosSeeder extends Seeder
             'nome' => 'Chicken Tikka Masala',
             'descricao' => 'Frango ao molho tikka masala.',
             'preco' => 44.90,
-            'patch_foto' => 'cardapiositens/Chicken.png',
+            'patch_foto' => '/imgs/cardapiositens/Chicken.png',
         ]);
 
         Cardapio::create([
             'id' => (string) Str::uuid(),
             'restaurante_id' => '18245bcd-e567-4f89-b123-0c1d2e345678',
             'nome' => 'Naan',
-            'descricao' => 'Pão naan tradicional.',
+            'descricao' => 'Pão redondo naan tradicional.',
             'preco' => 9.90,
-            'patch_foto' => 'cardapiositens/Naan.png',
+            'patch_foto' => '/imgs/cardapiositens/Naan.png',
         ]);
 
         Cardapio::create([
@@ -362,7 +362,7 @@ class CardapiosSeeder extends Seeder
             'nome' => 'Samosa',
             'descricao' => 'Pastel frito recheado.',
             'preco' => 14.90,
-            'patch_foto' => 'cardapiositens/Samosa.png',
+            'patch_foto' => '/imgs/cardapiositens/Samosa.png',
         ]);
 
         Cardapio::create([
@@ -371,16 +371,16 @@ class CardapiosSeeder extends Seeder
             'nome' => 'Biryani',
             'descricao' => 'Arroz temperado com carne.',
             'preco' => 34.90,
-            'patch_foto' => 'cardapiositens/Biryani.png',
+            'patch_foto' => '/imgs/cardapiositens/Biryani.png',
         ]);
 
         Cardapio::create([
             'id' => (string) Str::uuid(),
             'restaurante_id' => '18245bcd-e567-4f89-b123-0c1d2e345678',
             'nome' => 'Gulab Jamun',
-            'descricao' => 'Doce de leite frito.',
+            'descricao' => 'Bolinha Doce de leite frito.',
             'preco' => 19.90,
-            'patch_foto' => 'cardapiositens/Gulab.png',
+            'patch_foto' => '/imgs/cardapiositens/Gulab.png',
         ]);
 
         // Itens de cardápio para Restaurante Brasileiro
@@ -390,7 +390,7 @@ class CardapiosSeeder extends Seeder
             'nome' => 'Churrasco',
             'descricao' => 'Churrasco brasileiro com acompanhamentos.',
             'preco' => 49.90,
-            'patch_foto' => 'cardapiositens/Churrasco.png',
+            'patch_foto' => '/imgs/cardapiositens/Churrasco.png',
         ]);
 
         Cardapio::create([
@@ -399,7 +399,7 @@ class CardapiosSeeder extends Seeder
             'nome' => 'Moqueca',
             'descricao' => 'Moqueca de peixe e camarão.',
             'preco' => 39.90,
-            'patch_foto' => 'cardapiositens/Moqueca.png',
+            'patch_foto' => '/imgs/cardapiositens/Moqueca.png',
         ]);
 
         Cardapio::create([
@@ -408,7 +408,7 @@ class CardapiosSeeder extends Seeder
             'nome' => 'Acarajé',
             'descricao' => 'Bolinhos de feijão com camarão.',
             'preco' => 24.90,
-            'patch_foto' => 'cardapiositens/Acaraje.png',
+            'patch_foto' => '/imgs/cardapiositens/Acaraje.png',
         ]);
 
         Cardapio::create([
@@ -417,7 +417,7 @@ class CardapiosSeeder extends Seeder
             'nome' => 'Picanha',
             'descricao' => 'Picanha grelhada.',
             'preco' => 44.90,
-            'patch_foto' => 'cardapiositens/Picanha.png',
+            'patch_foto' => '/imgs/cardapiositens/Picanha.png',
         ]);
 
         Cardapio::create([
@@ -426,7 +426,7 @@ class CardapiosSeeder extends Seeder
             'nome' => 'Brigadeiro',
             'descricao' => 'Doce de chocolate brasileiro.',
             'preco' => 9.90,
-            'patch_foto' => 'cardapiositens/Brigadeiro.png',
+            'patch_foto' => '/imgs/cardapiositens/Brigadeiro.png',
         ]);
 
         // Itens de cardápio para Restaurante Árabe
@@ -436,7 +436,7 @@ class CardapiosSeeder extends Seeder
             'nome' => 'Kibe',
             'descricao' => 'Bolinhos de carne com trigo.',
             'preco' => 19.90,
-            'patch_foto' => 'cardapiositens/Kibe.png',
+            'patch_foto' => '/imgs/cardapiositens/Kibe.png',
         ]);
 
         Cardapio::create([
@@ -445,7 +445,7 @@ class CardapiosSeeder extends Seeder
             'nome' => 'Esfiha',
             'descricao' => 'Esfihas abertas e fechadas.',
             'preco' => 14.90,
-            'patch_foto' => 'cardapiositens/Esfiha.png',
+            'patch_foto' => '/imgs/cardapiositens/Esfiha.png',
         ]);
 
         Cardapio::create([
@@ -454,7 +454,7 @@ class CardapiosSeeder extends Seeder
             'nome' => 'Tabule',
             'descricao' => 'Salada de trigo com vegetais.',
             'preco' => 24.90,
-            'patch_foto' => 'cardapiositens/Tabule.png',
+            'patch_foto' => '/imgs/cardapiositens/Tabule.png',
         ]);
 
         Cardapio::create([
@@ -463,7 +463,7 @@ class CardapiosSeeder extends Seeder
             'nome' => 'Homus',
             'descricao' => 'Pasta de grão-de-bico.',
             'preco' => 19.90,
-            'patch_foto' => 'cardapiositens/Homus.png',
+            'patch_foto' => '/imgs/cardapiositens/Homus.png',
         ]);
 
         Cardapio::create([
@@ -472,7 +472,7 @@ class CardapiosSeeder extends Seeder
             'nome' => 'Baklava',
             'descricao' => 'Doce de massa folhada com nozes.',
             'preco' => 29.90,
-            'patch_foto' => 'cardapiositens/Baklava.png',
+            'patch_foto' => '/imgs/cardapiositens/Baklava.png',
         ]);
 
     }
