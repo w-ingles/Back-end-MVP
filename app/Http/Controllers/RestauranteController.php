@@ -5,13 +5,15 @@ namespace App\Http\Controllers;
 use App\Http\Requests\RestauranteRequest;
 use App\Models\Restaurante;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Str;
 
 class RestauranteController extends Controller
 {
 
     public function __construct()
     {
-        $this->middleware('auth:api');
+        //$this->middleware('auth:api');
     }
 
     /**
@@ -48,15 +50,40 @@ class RestauranteController extends Controller
      */
     public function store(RestauranteRequest $request)
     {
+        DB::beginTransaction();
+
+        try {
+            if ($request->hasFile('foto_restaurante')) {
+
+                $uuid = Str::uuid()->toString();
+
+                $filePath = "/imgs/restaurante/{$uuid}.png";
 
 
-        $restaurante = Restaurante::create($request->all());
+                $request->file('foto_restaurante')->move(public_path('imgs/restaurante'), "{$uuid}.png");//movendo foto para public
 
-        return response()->json([
-            'message' => 'Restaurante criado com sucesso!',
-            'data' => $restaurante
-        ], 201);
+                // Adiciona o caminho da foto ao request
+                $request->merge(['patch_foto' => $filePath]);
+            }
 
+
+            $restaurante = Restaurante::create($request->all());
+
+            DB::commit();
+
+            return response()->json([
+                'message' => 'Restaurante criado com sucesso!',
+                'data' => $restaurante
+            ], 201);
+
+        } catch (\Exception $e) {
+            DB::rollBack();
+
+            return response()->json([
+                'message' => 'Erro ao criar restaurante.',
+                'error' => $e->getMessage()
+            ], 500);
+        }
     }
 
     /**
@@ -80,20 +107,46 @@ class RestauranteController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(RestauranteRequest $request, string $id)
     {
 
-        // Encontra o restaurante pelo ID
-        $restaurante = Restaurante::findOrFail($id);
+        DB::beginTransaction();
+
+        try {
+
+            $restaurante = Restaurante::findOrFail($id);
+
+            if ($request->hasFile('foto_restaurante')) {
 
 
-        // Atualiza o restaurante
-        $restaurante->update($request->all());
+                $uuid = Str::uuid()->toString();
 
-        return response()->json([
-            'message' => 'Restaurante atualizado com sucesso!',
-            'data' => $restaurante
-        ], 200);
+                $filePath = "/imgs/restaurante/{$uuid}.png";
+
+                $request->file('foto_restaurante')->move(public_path('imgs/restaurante'), "{$uuid}.png");
+
+                $request->merge(['patch_foto' => $filePath]);
+
+                // Remove a foto antiga se existir
+                if ($restaurante->patch_foto && file_exists(public_path($restaurante->patch_foto))) {
+                    unlink(public_path($restaurante->patch_foto));
+                }
+            }
+
+            // Atualiza o restaurante com os dados do request
+            $restaurante->update($request->all());
+
+            // Confirma a transação
+            DB::commit();
+
+            return response()->json(['message' => 'Restaurante atualizado com sucesso!', 'data' => $restaurante], 200);
+
+        } catch (\Exception $e) {
+            // Reverte a transação em caso de erro
+            DB::rollBack();
+
+            return response()->json(['message' => 'Erro ao atualizar restaurante.', 'error' => $e->getMessage()], 500);
+        }
     }
 
     /**

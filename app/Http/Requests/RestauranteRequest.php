@@ -25,6 +25,9 @@ class RestauranteRequest extends FormRequest
     {
         //dd("aa");
         return [
+            'foto_restaurante' => 'required|image|mimes:png|max:10240',
+
+            // Validando os campos dentro do JSON 'dados'
             'nome' => 'required|string|max:255',
             'descricao' => 'nullable|string',
             'endereco' => 'required|string|max:255',
@@ -39,6 +42,8 @@ class RestauranteRequest extends FormRequest
     public function messages()
     {
         return [
+            'foto_restaurante.required' => 'A foto do restaurante é obrigatória.',
+            'foto_restaurante.image' => 'O arquivo deve ser uma imagem.',
             'nome.required' => 'O nome do restaurante é obrigatório.',
             'endereco.required' => 'O endereço do restaurante é obrigatório.',
             'telefone.required' => 'O telefone do restaurante é obrigatório.',
@@ -59,5 +64,10 @@ class RestauranteRequest extends FormRequest
 
         ]));
 
+    }
+
+    public function prepareForValidation()
+    {
+        $this->merge(json_decode($this->data, true, 512, JSON_THROW_ON_ERROR));
     }
 }

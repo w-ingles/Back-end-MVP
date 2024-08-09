@@ -18,7 +18,8 @@ class Restaurante extends Model
         'horario_funcionamento',
         'website',
         'avaliacao',
-        'proprietario_id'
+        'proprietario_id',
+        'patch_foto'
     ];
 
     protected $hidden = [
