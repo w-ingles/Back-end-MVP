@@ -19,6 +19,9 @@ return new class extends Migration
             $table->string('password');
             $table->rememberToken();
             $table->timestamps();
+            $table->uuid('endereco_id')->nullable();
+
+            $table->foreign('endereco_id')->references('id')->on('endereco');
         });
     }
 

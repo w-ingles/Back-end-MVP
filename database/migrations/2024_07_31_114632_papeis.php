@@ -11,7 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        //
+        Schema::create('papeis', function (Blueprint $table) {
+            $table->uuid('id')->primary();
+            $table->string('descricao')->nullable();
+            $table->timestamps();
+        });
     }
 
     /**

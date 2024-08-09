@@ -11,16 +11,21 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('cardapios', function (Blueprint $table) {
+        Schema::create('cardapio_item', function (Blueprint $table) {
             $table->uuid('id')->primary();
             $table->uuid('restaurante_id');
             $table->string('nome');
             $table->text('descricao')->nullable();
             $table->decimal('preco');
             $table->string('patch_foto');
+            $table->uuid('proprietario_id')->nullable();
+            $table->uuid('tipo_id')->nullable();
             $table->timestamps();
 
             $table->foreign('restaurante_id')->references('id')->on('restaurantes')->onDelete('cascade');
+            $table->foreign('proprietario_id')->references('id')->on('restaurantes')->onDelete('cascade');
+            $table->foreign('tipo_id')->references('id')->on('tipo_cardapio_item');
+
         });
     }
 

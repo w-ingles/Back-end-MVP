@@ -22,9 +22,11 @@ return new class extends Migration
             $table->string('patch_foto')->nullable();
             $table->float('avaliacao')->default(0);
             $table->uuid('proprietario_id')->nullable();
+            $table->uuid('endereco_id')->nullable();
             $table->timestamps();
 
             $table->foreign('proprietario_id')->references('id')->on('users');
+            $table->foreign('endereco_id')->references('id')->on('endereco');
         });
     }
 

@@ -10,6 +10,7 @@ class Cardapio extends Model
 {
     use HasFactory, HasUuids;
 
+    protected $table = 'cardapio_item';
     protected $fillable = [
         'restaurante_id',
         'nome',
